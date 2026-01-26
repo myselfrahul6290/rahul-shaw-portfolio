@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-profile",
+      "description": "A portrait of Rahul smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9maWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY4MDYxMjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profile portrait"
+    },
+    {
+      "id": "about-me",
+      "description": "Rahul working on a laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1561347981-969c80cf4463?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBjb2Rpbmd8ZW58MHx8fHwxNzY4MDM0NDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person coding"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "Screenshot of a modern web application.",
+      "imageUrl": "https://images.unsplash.com/photo-1708939582011-ddbd2ff61b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWJzaXRlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NjgwNDk1NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website screenshot"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Interface of a mobile app.",
+      "imageUrl": "https://images.unsplash.com/photo-1752055340594-4eb0eda11a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcHAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY4MDY4OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Dashboard of an analytics platform.",
+      "imageUrl": "https://images.unsplash.com/photo-1767449441925-737379bc2c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjgwNDc2OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard ui"
+    }
+  ]
+}
