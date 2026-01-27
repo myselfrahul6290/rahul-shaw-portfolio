@@ -41,7 +41,7 @@ export default function ContactSection({ formValues, onFormChange }: ContactSect
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 order-2 lg:order-1">
             {contactInfo.map((info) => (
               <div key={info.title} className="flex items-center gap-4">
                 <info.icon className="h-8 w-8 text-accent" />
@@ -55,7 +55,7 @@ export default function ContactSection({ formValues, onFormChange }: ContactSect
             ))}
           </div>
 
-          <Card>
+          <Card className="order-1 lg:order-2">
             <CardHeader>
               <CardTitle className="font-headline text-2xl">Write me your project</CardTitle>
             </CardHeader>

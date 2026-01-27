@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { createPortal } from "react-dom"
 import { cva, type VariantProps } from "class-variance-authority"
 import { X } from "lucide-react"
 import { cn, Slot } from "@/lib/utils"
@@ -85,7 +86,15 @@ const SheetClose = React.forwardRef<
 SheetClose.displayName = "SheetClose"
 
 const SheetPortal = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
+  return createPortal(<>{children}</>, document.body)
 }
 
 const SheetOverlay = React.forwardRef<
