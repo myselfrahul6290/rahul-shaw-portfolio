@@ -1,6 +1,5 @@
 'use client';
-
-import { Github, Linkedin, Dribbble } from 'lucide-react';
+import { socialLinks } from '@/lib/info';
 import { motion } from 'framer-motion';
 
 const navLinks = [
@@ -9,11 +8,7 @@ const navLinks = [
   { name: 'Skills', href: '#skills' },
 ];
 
-const socialLinks = [
-  { name: 'LinkedIn', href: '#', icon: Linkedin },
-  { name: 'Github', href: '#', icon: Github },
-  { name: 'Dribbble', href: '#', icon: Dribbble },
-];
+
 
 export default function Footer() {
   return (

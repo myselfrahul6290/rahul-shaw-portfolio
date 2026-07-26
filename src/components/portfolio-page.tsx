@@ -16,6 +16,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 import { Card } from '@/components/ui/card';
+import { contactInfo, education, experiences, mobileProjects, socialLinks, stats, work } from '@/lib/info';
 
 const MobilePreview = ({ children }: { children: React.ReactNode }) => (
   <div className="relative mx-auto border-gray-800 bg-gray-800 border-[11px] rounded-[2.3rem] h-full w-full max-w-[300px] max-h-[640px] shadow-2xl">
@@ -67,31 +68,8 @@ const MobileHome = () => (
   </div>
 );
 
-const stats = [
-  { value: '03+', label: 'Years experience' },
-  { value: '15+', label: 'Completed projects' },
-  { value: '02+', label: 'Companies worked' },
-];
-const experiences = [
-  {
-    role: 'Software Engineer',
-    company: 'NrXen',
-    period: 'Jul 2024 - Present',
-    description: 'Driving full-stack development for large-scale web applications, improving performance, scalability, and maintainability.',
-  },
-  {
-    role: 'SDE Intern',
-    company: 'NrXen',
-    period: 'Feb 2024 - Jun 2024',
-    description: 'Developing core frontend architecture for a large operational management system, improving usability and workflow efficiency.',
-  },
-  {
-    role: 'SDE Intern',
-    company: 'PMN Patralok',
-    period: 'Jun 2023 - Dec 2023',
-    description: 'Implementing secure authentication systems and media optimization pipelines, improving performance and user experience.',
-  },
-];
+
+
 
 const MobileAbout = () => (
   <div className="p-3 text-foreground bg-background overflow-y-auto text-center">
@@ -203,14 +181,7 @@ const MobileServices = () => (
   </div>
 );
 
-const education = [
-  { degree: 'Computer Science', institution: 'Delhi University', period: '2018 - 2022' },
-  { degree: 'Web Design Master', institution: 'Online Institute', period: '2020 - 2021' },
-];
-const work = [
-  { role: 'Software Engineer', company: 'Tech Solutions Inc.', period: '2022 - Present' },
-  { role: 'Frontend Intern', company: 'Creative Agency', period: '2021 - 2022' },
-];
+
 
 const timelineItemVariants = {
   hidden: { opacity: 0, x: -20 },
@@ -253,77 +224,14 @@ const MobileQualification = () => (
 );
 
 
-// const projects = [
-//   { id: 1, title: 'Modern Website', description: 'Adaptable to all devices.', imageId: 'portfolio-1', link: '#' },
-//   { id: 2, title: 'Mobile App', description: 'A sleek mobile application.', imageId: 'portfolio-2', link: '#' },
-//   { id: 3, title: 'Data Dashboard', description: 'Analytics dashboard.', imageId: 'portfolio-3', link: '#' },
-// ];
-// const MobilePortfolio = () => (
-//   <div className="p-3 text-foreground bg-background">
-//     <h2 className="text-xl font-headline font-bold text-primary text-center mb-4">Portfolio</h2>
-//     <p className="text-muted-foreground text-center mb-4 text-sm">Most recent work</p>
-//     <Carousel opts={{ align: 'start', loop: true }} className="w-full">
-//       <CarouselContent>
-//         {projects.map((project) => {
-//           const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
-//           return (
-//             <CarouselItem key={project.id}>
-//               <Card className="p-2">
-//                 {projectImage && <Image src={projectImage.imageUrl} alt={project.title} width={600} height={400} className="rounded-md object-cover aspect-[3/2]" />}
-//                 <h3 className="font-headline text-base font-bold text-primary mt-2">{project.title}</h3>
-//                 <p className="text-muted-foreground text-xs">{project.description}</p>
-//                 <Button variant="link" asChild className="p-0 justify-start h-auto text-accent text-xs">
-//                   <a href={project.link}> Demo <ArrowRight className="ml-1 h-3 w-3" /> </a>
-//                 </Button>
-//               </Card>
-//             </CarouselItem>
-//           );
-//         })}
-//       </CarouselContent>
-//     </Carousel>
-//   </div>
-// );
-
-
-const mobileProjects = [
-  {
-    logoChar: 'N',
-    logoBg: 'bg-gradient-to-br from-green-400 to-cyan-500',
-    title: 'Nxai Sense',
-    description: 'AI-based CCTV monitoring system.',
-    highlight: 'AI-Powered',
-    isFeatured: true,
-  },
-  {
-    logoChar: 'N',
-    logoBg: 'bg-gradient-to-br from-blue-400 to-indigo-500',
-    title: 'Nimmos V2',
-    description: 'GPS tracking and attendance system.',
-    highlight: 'GPS Tracking',
-    isFeatured: false,
-  },
-  {
-    logoChar: 'N',
-    logoBg: 'bg-gradient-to-br from-purple-400 to-pink-500',
-    title: 'Nxlens',
-    description: 'Evidence collection app.',
-    highlight: 'Evidence Collection',
-    isFeatured: false,
-  },
-];
-
 const MobilePortfolio = () => {
   const featuredProject = mobileProjects.find(p => p.isFeatured);
   const otherProjects = mobileProjects.filter(p => !p.isFeatured);
 
   return (
     <div className="p-3 text-foreground bg-background">
-      {/* <div className="flex justify-between items-center mb-4"> */}
-      {/* <h2 className="text-xl font-headline font-bold text-primary">Work</h2>
-        <a href="#portfolio" className="text-xs font-semibold text-accent">View All</a> */}
       <h2 className="text-xl font-headline font-bold text-primary text-center mb-2">Portfolio</h2>
       <p className="text-muted-foreground text-center mb-4 text-sm">Most recent work</p>
-      {/* </div> */}
 
       {featuredProject && (
         <motion.div
@@ -383,23 +291,13 @@ const MobilePortfolio = () => {
   )
 };
 
-const contactInfo = [
-  { icon: Mail, title: 'Email', value: 'rahul@email.com' },
-  { icon: Phone, title: 'Call Me', value: '+123 456 7890' },
-  { icon: MapPin, title: 'Location', value: 'New Delhi, India' },
-];
 
-const socialLinksMobile = [
-  { name: 'LinkedIn', href: '#', icon: Linkedin },
-  { name: 'Github', href: '#', icon: Github },
-  { name: 'Dribbble', href: '#', icon: Dribbble },
-];
 
 const MobileFooter = () => (
   <div className="bg-secondary/50 p-3 text-center mt-6 rounded-lg">
     <h2 className="text-base font-headline font-bold text-primary">RAHUL</h2>
     <div className="mt-3 flex justify-center space-x-4">
-      {socialLinksMobile.map((item) => (
+      {socialLinks.map((item) => (
         <a key={item.name} href={item.href} className="text-foreground/80 hover:text-accent">
           <item.icon className="h-4 w-4" aria-hidden="true" />
         </a>

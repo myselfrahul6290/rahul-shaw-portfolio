@@ -2,15 +2,10 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Send, Mouse, ArrowDown, Github, Linkedin, Dribbble } from 'lucide-react';
+import { Send, Mouse, ArrowDown } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { motion } from 'framer-motion';
-
-const socialLinks = [
-  { name: 'LinkedIn', href: '#', icon: Linkedin },
-  { name: 'Github', href: '#', icon: Github },
-  { name: 'Dribbble', href: '#', icon: Dribbble },
-];
+import { socialLinks } from '@/lib/info';
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'hero-profile');
 

@@ -6,55 +6,10 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { motion } from 'framer-motion';
 import { Card } from './ui/card';
+import { experiences, skills, stats } from '@/lib/info';
 
 const aboutImage = PlaceHolderImages.find(p => p.id === 'about-me');
 
-const stats = [
-  { value: '03+', label: 'Years experience' },
-  { value: '15+', label: 'Completed projects' },
-  { value: '02+', label: 'Companies worked' },
-];
-
-
-const skills = [
-  {
-    title: 'Backend',
-    list: ['Node.js', 'Express.js', 'TypeScript', 'FastAPI'],
-  },
-  {
-    title: 'Frontend',
-    list: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
-  },
-  {
-    title: 'Database',
-    list: ['MongoDB', 'PostgreSQL', 'Redis', 'MySQL'],
-  },
-  {
-    title: 'Tools',
-    list: ['Git', 'CI/CD', 'Docker', 'MQTT'],
-  },
-];
-
-const experiences = [
-  {
-    role: 'Software Engineer',
-    company: 'NrXen',
-    period: 'Jul 2024 - Present',
-    description: 'Driving full-stack development for large-scale web applications, improving performance, scalability, and maintainability.',
-  },
-  {
-    role: 'SDE Intern',
-    company: 'NrXen',
-    period: 'Feb 2024 - Jun 2024',
-    description: 'Developing core frontend architecture for a large operational management system, improving usability and workflow efficiency.',
-  },
-  {
-    role: 'SDE Intern',
-    company: 'PMN Patralok',
-    period: 'Jun 2023 - Dec 2023',
-    description: 'Implementing secure authentication systems and media optimization pipelines, improving performance and user experience.',
-  },
-];
 
 export default function AboutSection() {
   return (
@@ -106,8 +61,6 @@ export default function AboutSection() {
                   <p className="text-sm text-muted-foreground mt-1 whitespace-nowrap">{stat.label}</p>
                 </motion.div>
               ))}
-
-
             </div> */}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

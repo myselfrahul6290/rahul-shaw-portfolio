@@ -7,12 +7,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { contactInfo } from '@/lib/info';
 
-const contactInfo = [
-  { icon: Mail, title: 'Email', value: 'rahul@email.com', href: 'mailto:rahul@email.com' },
-  { icon: Phone, title: 'Call Me', value: '+123 456 7890', href: 'tel:+1234567890' },
-  { icon: MapPin, title: 'Location', value: 'New Delhi, India' },
-];
+
 
 type ContactSectionProps = {
   formValues: {
