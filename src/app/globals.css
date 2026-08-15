@@ -82,7 +82,7 @@
     display: none; /* Safari and Chrome */
   }
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth scroll-pt-24;
   }
 }
 

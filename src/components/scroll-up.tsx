@@ -34,13 +34,13 @@ export default function ScrollUp() {
       variant="default"
       size="icon"
       className={cn(
-        "fixed bottom-8 right-8 rounded-full h-12 w-12 shadow-lg transition-opacity duration-300 z-50 bg-accent text-accent-foreground hover:bg-accent/90",
-        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        "fixed bottom-20 right-4 sm:right-6 lg:bottom-8 lg:right-8 rounded-full h-10 w-10 sm:h-12 sm:w-12 shadow-lg transition-all duration-300 z-50 bg-primary text-primary-foreground hover:bg-primary/90",
+        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
       )}
       onClick={scrollToTop}
       aria-label="Scroll to top"
     >
-      <ArrowUp className="h-6 w-6" />
+      <ArrowUp className="h-5 w-5 sm:h-6 sm:w-6" />
     </Button>
   );
 }
