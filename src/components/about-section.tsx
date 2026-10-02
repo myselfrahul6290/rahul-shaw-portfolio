@@ -37,7 +37,7 @@ export default function AboutSection() {
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             >
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-foreground font-medium">
-                <span className="font-bold text-primary">Software Engineer</span> with experience building scalable web and mobile applications using modern technologies.
+                I'm <span className="font-bold text-primary">Rahul Shaw</span>, a <span className="font-bold text-primary">Software Engineer</span> with experience building scalable web and mobile applications using modern technologies.
               </p>
               <p className="text-xs sm:text-sm md:text-base leading-relaxed text-muted-foreground">
                 My focus is on designing end-to-end systems that are clean, maintainable, and built to scale. I enjoy working across the stack—from crafting responsive user interfaces to developing reliable backend services—and turning complex ideas into simple, usable products.

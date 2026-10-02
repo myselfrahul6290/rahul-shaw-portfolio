@@ -50,7 +50,7 @@ export default function HeroSection() {
             >
               {/* Heading */}
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-headline font-bold tracking-tight text-primary leading-tight">
-                Hi, I'm Rahul
+                Hi, I'm <span className="text-primary">Rahul Shaw</span>
               </h1>
 
               {/* Subtitle */}
@@ -95,7 +95,7 @@ export default function HeroSection() {
                 {heroImage && (
                   <Image
                     src={heroImage.imageUrl}
-                    alt={heroImage.description}
+                    alt="Rahul Shaw - Software Engineer and Full-Stack Developer"
                     data-ai-hint={heroImage.imageHint}
                     width={320}
                     height={320}

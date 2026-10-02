@@ -121,7 +121,7 @@ const MobileHome = ({ onNavigate }: { onNavigate: (sec: string) => void }) => (
     {heroImage && (
       <Image
         src={heroImage.imageUrl}
-        alt={heroImage.description}
+        alt="Rahul Shaw - Software Engineer"
         width={96}
         height={96}
         priority
@@ -129,7 +129,7 @@ const MobileHome = ({ onNavigate }: { onNavigate: (sec: string) => void }) => (
       />
     )}
 
-    <h1 className="text-2xl font-bold font-headline text-primary">Hi, I'm Rahul</h1>
+    <h1 className="text-2xl font-bold font-headline text-primary">Hi, I'm Rahul Shaw</h1>
     <h2 className="text-md font-semibold text-muted-foreground mt-1">Software Engineer</h2>
     <p className="text-xs text-foreground/80 mt-2 px-1">
       Strong experience in full-stack development, delivering scalable and high-quality applications.
@@ -157,7 +157,7 @@ const MobileAbout = () => (
       <p className="text-xs text-muted-foreground mb-2">My introduction</p>
 
       <p className="text-xs leading-5 text-foreground/80 px-1 mt-2 text-left">
-        <span className="font-semibold text-primary">Software Engineer</span> with experience building scalable web and mobile applications using modern technologies.
+        I'm <span className="font-semibold text-primary">Rahul Shaw</span>, a <span className="font-semibold text-primary">Software Engineer</span> with experience building scalable web and mobile applications using modern technologies.
       </p>
     </div>
 
